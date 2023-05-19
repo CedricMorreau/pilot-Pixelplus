@@ -10,6 +10,8 @@ import ThirdSectionSlider from "@/components/ThirdSectionSlider";
 import FifthSection from "@/components/FifthSection";
 import Footer from "@/components/Footer";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <>
@@ -25,12 +27,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative bg-[#000] px-10 mt-12 flex">
-        <SecondSectionAccordion />
+      <section className="relative bg-[#000] px-10 mt-12">
+        <motion.div
+          initial={{ x: 30, opacity: 0 }}
+          transition={{ type: 'spring', delay: 0.6, duration: 2 }}
+          whileInView={{ x: 0, opacity: 1 }}
+        >
+          <SecondSectionAccordion />
+        </motion.div>
       </section>
 
       <section className="relative bg-[#EBEBEB] px-10 py-24 md:py-36">
-        <ThirdSectionSlider />
+        <motion.div
+          initial={{ x: 30, opacity: 0 }}
+          transition={{ type: 'spring', delay: 0.6, duration: 2 }}
+          whileInView={{ x: 0, opacity: 1 }}
+        >
+          <ThirdSectionSlider />
+        </motion.div>
       </section>
 
       <section>
@@ -38,7 +52,13 @@ export default function Home() {
       </section>
 
       <section className="px-10 py-24 md:py-36">
-        <FifthSection />
+        <motion.div
+          initial={{ x: 30, opacity: 0 }}
+          transition={{ type: 'spring', delay: 0.6, duration: 2 }}
+          whileInView={{ x: 0, opacity: 1 }}
+        >
+          <FifthSection />
+        </motion.div>
       </section>
 
       <footer className="bg-[#000] text-[#fff] relative px-10 pt-24 pb-14 md:pt-32 md:pb-12 z-50">
