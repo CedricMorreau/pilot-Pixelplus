@@ -6,3 +6,11 @@
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+
+.AccordionContent {
+  overflow: hidden;
+}
+
+.AccordionTrigger[data-state='closed']>.AccordionChevron {
+  transform: rotate(180deg);
+}

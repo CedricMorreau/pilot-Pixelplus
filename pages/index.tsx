@@ -5,6 +5,7 @@ import FirstSectionHero from "@/components/FirstSectionHero";
 import Chat from "@/components/Chat";
 import FirstSectionCarousel from "@/components/FirstSectionCarousel";
 import FirstSectionSecondCarousel from "@/components/FirstSectionSecondCarousel";
+import SecondSectionAccordion from "@/components/SecondSectionAccordion"
 
 export default function Home() {
   return (
@@ -19,6 +20,10 @@ export default function Home() {
         <div className="relative">
           <FirstSectionSecondCarousel />
         </div>
+      </section>
+
+      <section className="relative bg-[#000] px-10 mt-12 flex">
+        <SecondSectionAccordion />
       </section>
     </>
   )
