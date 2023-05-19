@@ -14,3 +14,25 @@
 .AccordionTrigger[data-state='closed']>.AccordionChevron {
   transform: rotate(180deg);
 }
+
+.swiper-pagination {
+  position: relative !important;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.swiper-pagination-bullet {
+  width: 1rem !important;
+  border-radius: 0 !important;
+  height: .2rem !important;
+
+  transition: all 1s ease-in-out;
+
+}
+
+.swiper-pagination-bullet-active {
+  width: 3.5rem !important;
+  border-radius: 0 !important;
+  height: .2rem !important;
+  background-color: #000 !important;
+}

@@ -6,6 +6,7 @@ import Chat from "@/components/Chat";
 import FirstSectionCarousel from "@/components/FirstSectionCarousel";
 import FirstSectionSecondCarousel from "@/components/FirstSectionSecondCarousel";
 import SecondSectionAccordion from "@/components/SecondSectionAccordion"
+import ThirdSectionSlider from "@/components/ThirdSectionSlider";
 
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
 
       <section className="relative bg-[#000] px-10 mt-12 flex">
         <SecondSectionAccordion />
+      </section>
+
+      <section className="relative bg-[#EBEBEB] px-10 py-24 md:py-36">
+        <ThirdSectionSlider />
       </section>
     </>
   )
