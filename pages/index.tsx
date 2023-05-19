@@ -7,6 +7,7 @@ import FirstSectionCarousel from "@/components/FirstSectionCarousel";
 import FirstSectionSecondCarousel from "@/components/FirstSectionSecondCarousel";
 import SecondSectionAccordion from "@/components/SecondSectionAccordion"
 import ThirdSectionSlider from "@/components/ThirdSectionSlider";
+import FifthSection from "@/components/FifthSection";
 
 export default function Home() {
   return (
@@ -29,6 +30,14 @@ export default function Home() {
 
       <section className="relative bg-[#EBEBEB] px-10 py-24 md:py-36">
         <ThirdSectionSlider />
+      </section>
+
+      <section>
+        <Image src="/Pixelplus_Pic.png" alt="Pixelplus pic" width={3000} height={3000} />
+      </section>
+
+      <section className="px-10 py-24 md:py-36">
+        <FifthSection />
       </section>
     </>
   )
