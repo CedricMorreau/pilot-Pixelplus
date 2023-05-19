@@ -21,7 +21,7 @@ export default function Footer() {
     return (
         <>
             <div className="grid justify-items-center w-full max-w-2xl m-auto">
-                <h4 className="text-3xl pb-5 font-bold md:text-6xl md:pb-10">
+                <h4 className="text-3xl pb-5 font-bold md:text-6xl md:pb-10 text-center">
                     Vrijblijvend gesprek?
                 </h4>
 
